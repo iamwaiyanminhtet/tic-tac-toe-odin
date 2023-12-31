@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Single+Day&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cells-border :  #8E94F2;
+}
+
+body {
+    background-color: #2d2d2d;
+    height: 100vh;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    margin: 1rem;
+}
+
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-layout section h1 {
+    font-family: "Single Day",Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.display-turn {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.playerX {
+    color: chocolate;
+}
+.playerO {
+    color:royalblue;
+}
+
+.visibility-hidden {
+    visibility: hidden;
+}
+
+.winner-display {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Single Day",Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.cells-container {
+   display: grid;
+   grid-template-columns: repeat(3,75px);
+   max-width: 225px;
+   border: 1px solid var(--cells-border);
+   align-self: center;
+
+}
+
+.cells {
+    width: 75px;
+    height: 75px;
+    border: 1px solid var(--cells-border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rubik Doodle Shadow",Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: black;
+}
+
+.btn-groups {
+    align-self: end;
+}
+
+.btn {
+    padding: 0.5rem;
+    background-color: #4C230A;
+    border: none;    
+    border-radius: 5px;
+    color: white;
+}

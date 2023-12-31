@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="main-layout" id="main-layout">
+    <section>
+        <h1>Tic Tac Toe</h1>
+    </section>
+    <section>
+        <p class="display-turn playerX" id="display-turn">Player X's turn</p>
+        <p class="visibility-hidden winner-display" id="winnerDisplay"></p>
+    </section>
+    <div class="cells-container" id="cells-container">
+        <div class="cells"></div>
+        <div class="cells"></div>
+        <div class="cells"></div>
+        <div class="cells"></div>
+        <div class="cells"></div>
+        <div class="cells"></div>
+        <div class="cells"></div>
+        <div class="cells"></div>
+        <div class="cells"></div>
+    </div>
+    <section class="btn-groups">
+        <button class="visibility-hidden btn" id="restart-btn">Restart</button>
+        <button class="btn" id="reset-btn">Reset</button>
+    </section>
+   </div>
+</body>
+<script src="script.js"></script>
+</html>
